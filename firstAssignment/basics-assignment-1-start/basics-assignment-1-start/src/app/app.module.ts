@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { WarningalertComponent } from './feature/warningalert/warningalert.component';
+import { SuccessalertComponent } from './feature/successalert/successalert.component';
+import { AlertcontainerComponent } from './feature/alertcontainer/alertcontainer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WarningalertComponent,
+    SuccessalertComponent,
+    AlertcontainerComponent
   ],
   imports: [
     BrowserModule,
