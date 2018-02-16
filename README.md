@@ -4,7 +4,7 @@
 - https://cli.angular.io/
 
 ### Generate componenet using the cli
-ng generate component test111
+ng generate component custom
 
 ##### make sure the componenet is here
 - /home/andrew/Documents/repos/udemy-the-complete-guide-to-angular/firstApp/src/app/app.module.ts 
