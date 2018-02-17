@@ -1,4 +1,12 @@
+<label for="myInput">Server Name</label>
+<input
+  type="text"
+  name="myInput"
+  class="form-control"
+  id="myInput1"
+  (input)="onUpdateServerName($event)">
 
+  <p>{{serverName}}</p>
 
 <button (click)="onCreateServer()" class="btn btn-primary" [disabled]="!allowNewServer">click me</button>
 
@@ -8,6 +16,3 @@
 <p>this {{'go test'}} from serevr {{serverId }} and is {{serverStatus}} and {{ getServerStatus() }}</p>
 <app-custom></app-custom>
 <app-custom></app-custom>
-
-
-

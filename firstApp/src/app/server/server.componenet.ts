@@ -10,6 +10,7 @@ export class ServerComponent {
   serverStatus: string = 'offline';
   allowNewServer: boolean = false;
   serverCreationStatus = 'No server was created';
+  serverName = '';
 
   getServerStatus() {
     return this.serverStatus;
@@ -28,5 +29,10 @@ export class ServerComponent {
 
   onCreateServer() {
     this.serverCreationStatus = 'Server was created';
+  }
+
+  onUpdateServerName(event: any) {
+    // console.log('this.onUpdateServerName', event);
+    this.serverName = (<HTMLInputElement>event.target).value;
   }
 }
