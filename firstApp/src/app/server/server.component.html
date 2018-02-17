@@ -1,7 +1,9 @@
 
 
-<button class="btn btn-primary" [disabled]="!allowNewServer">click me</button>
+<button (click)="onCreateServer()" class="btn btn-primary" [disabled]="!allowNewServer">click me</button>
 
+
+<p>{{serverCreationStatus}}</p>
 <p>The server Componenet</p>
 <p>this {{'go test'}} from serevr {{serverId }} and is {{serverStatus}} and {{ getServerStatus() }}</p>
 <app-custom></app-custom>
