@@ -1,12 +1,14 @@
 <label for="myInput">Server Name</label>
-<input
+<!-- <input
   type="text"
   name="myInput"
   class="form-control"
   id="myInput1"
-  (input)="onUpdateServerName($event)">
+  (input)="onUpdateServerName($event)"> -->
 
-  <p>{{serverName}}</p>
+<input type="text" name="myInput" class="form-control" id="myInput1" [(ngModel)]="serverName" />
+
+<p>{{serverName}}</p>
 
 <button (click)="onCreateServer()" class="btn btn-primary" [disabled]="!allowNewServer">click me</button>
 

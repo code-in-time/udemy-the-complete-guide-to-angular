@@ -10,7 +10,7 @@ export class ServerComponent {
   serverStatus: string = 'offline';
   allowNewServer: boolean = false;
   serverCreationStatus = 'No server was created';
-  serverName = '';
+  serverName = 'my server name';
 
   getServerStatus() {
     return this.serverStatus;
