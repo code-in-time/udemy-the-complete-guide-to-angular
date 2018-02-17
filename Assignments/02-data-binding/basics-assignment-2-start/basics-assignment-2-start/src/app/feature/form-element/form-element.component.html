@@ -1,0 +1,13 @@
+<div class="well">
+
+  <div class="form-group">
+    <label for="txtUsername1">the Username</label>
+    <input type="text" name="txtUsername1" id="txtUsername" class="form-control" [(ngModel)]="username">
+  </div>
+  <button class="btn btn-primary" (click)="clickBtnReset($event)" [disabled]="username===''">Reset USERNAME</button>
+
+  <p>
+    {{username}}
+  </p>
+
+</div>
