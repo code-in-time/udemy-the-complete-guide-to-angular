@@ -13,6 +13,7 @@ export class ServerComponent {
   serverName = 'my server name';
   clickMeClicked = false;
 
+
   getServerStatus() {
     return this.serverStatus;
   }
@@ -22,6 +23,8 @@ export class ServerComponent {
       this.allowNewServer = true;
       console.log(this.allowNewServer);
     }, 3000);
+
+    this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
   }
 
   // ngOnInit() {
@@ -36,5 +39,9 @@ export class ServerComponent {
   onUpdateServerName(event: any) {
     // console.log('this.onUpdateServerName', event);
     this.serverName = (<HTMLInputElement>event.target).value;
+  }
+
+  getServerStatausColor() {
+    return this.serverStatus === 'online' ? 'green' : 'red';
   }
 }

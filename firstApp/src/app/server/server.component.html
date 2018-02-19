@@ -18,5 +18,7 @@
 <p>{{serverCreationStatus}}</p>
 <p>The server Componenet</p>
 <p>this {{'go test'}} from serevr {{serverId }} and is {{serverStatus}} and {{ getServerStatus() }}</p>
+
+<p [ngStyle]="{backgroundColor: getServerStatausColor()}">color {{serverStatus}}</p>
 <app-custom></app-custom>
 <app-custom></app-custom>
