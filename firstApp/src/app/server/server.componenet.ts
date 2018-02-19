@@ -11,6 +11,7 @@ export class ServerComponent {
   allowNewServer: boolean = false;
   serverCreationStatus = 'No server was created';
   serverName = 'my server name';
+  clickMeClicked = false;
 
   getServerStatus() {
     return this.serverStatus;
@@ -29,6 +30,7 @@ export class ServerComponent {
 
   onCreateServer() {
     this.serverCreationStatus = 'Server was created';
+    this.clickMeClicked = true;
   }
 
   onUpdateServerName(event: any) {

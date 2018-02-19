@@ -12,6 +12,8 @@
 
 <button (click)="onCreateServer()" class="btn btn-primary" [disabled]="!allowNewServer">click me</button>
 
+<p *ngIf="clickMeClicked">button clicked this must show</p>
+
 
 <p>{{serverCreationStatus}}</p>
 <p>The server Componenet</p>
