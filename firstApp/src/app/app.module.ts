@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.componenet';
 import { CustomComponent } from './custom/custom.component';
+import { LearnClassChangeComponent } from './feature/learn-class-change/learn-class-change.component';
 
 
 
@@ -13,7 +14,8 @@ import { CustomComponent } from './custom/custom.component';
   declarations: [
     AppComponent,
     ServerComponent,
-    CustomComponent
+    CustomComponent,
+    LearnClassChangeComponent
   ],
   imports: [
     BrowserModule,

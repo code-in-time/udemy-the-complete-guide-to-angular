@@ -10,6 +10,8 @@
 
 <p>{{serverName}}</p>
 
+<app-learn-class-change></app-learn-class-change>
+
 <button (click)="onCreateServer()" class="btn btn-primary" [disabled]="!allowNewServer">click me</button>
 
 <p *ngIf="clickMeClicked">button clicked this must show</p>

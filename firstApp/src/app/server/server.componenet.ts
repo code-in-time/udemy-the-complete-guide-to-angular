@@ -14,6 +14,7 @@ export class ServerComponent {
   clickMeClicked = false;
 
 
+
   getServerStatus() {
     return this.serverStatus;
   }
