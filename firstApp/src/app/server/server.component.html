@@ -22,5 +22,17 @@
 <p>this {{'go test'}} from serevr {{serverId }} and is {{serverStatus}} and {{ getServerStatus() }}</p>
 
 <p [ngStyle]="{backgroundColor: getServerStatausColor()}">color {{serverStatus}}</p>
-<app-custom></app-custom>
-<app-custom></app-custom>
+
+
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button class="btn btn-primary" (click)="addCustomElementHandler()">add new custom componenet</button>
+  <button class="btn btn-secondary" (click)="removeCustomElementHandler()">remove new custom componenet</button>
+</div>
+
+
+
+
+
+
+<app-custom *ngFor="let i of serverArray"></app-custom>
+

@@ -12,8 +12,7 @@ export class ServerComponent {
   serverCreationStatus = 'No server was created';
   serverName = 'my server name';
   clickMeClicked = false;
-
-
+  serverArray: any = [1, 2, 3];
 
   getServerStatus() {
     return this.serverStatus;
@@ -44,5 +43,17 @@ export class ServerComponent {
 
   getServerStatausColor() {
     return this.serverStatus === 'online' ? 'green' : 'red';
+  }
+
+  addCustomElementHandler() {
+
+    this.serverArray.push('1');
+  }
+
+  removeCustomElementHandler() {
+
+    this.serverArray.pop();
+
+    console.log(this.serverArray);
   }
 }
