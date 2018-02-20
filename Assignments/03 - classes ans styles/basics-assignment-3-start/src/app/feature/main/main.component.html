@@ -1,0 +1,14 @@
+<button (click)="btnClickHandler()"class="btn btn-primary">Display Details</button>
+<p [ngClass]="{
+              'text-info': true,
+              'bg-warning': true,
+              'text-uppercase':true,
+               'hidden': paragraphVisible === -1}">This is a piece of text</p>
+
+
+<ul class="list-group">
+  <li
+      *ngFor="let item of logButtnClickArr, let i = index"
+      [ngClass]="{'list-group-item': true, 'textLight' : i>=5}"
+      [ngStyle]="{'background-color' : i >= 5 ? 'blue' : 'none'}">{{item}}</li>
+</ul>
