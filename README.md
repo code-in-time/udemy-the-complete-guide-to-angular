@@ -12,3 +12,10 @@ ng g componenet feature/my-componenet
 #### make sure the componenet is here
 
 - /home/andrew/Documents/repos/udemy-the-complete-guide-to-angular/firstApp/src/app/app.module.ts 
+
+
+
+
+##### grep short cuts
+
+grep -Hrn 'LearnClassChangeComponent' ./ -A5 -
