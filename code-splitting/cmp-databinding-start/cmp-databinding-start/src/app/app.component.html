@@ -1,9 +1,16 @@
 <div class="container">
-  <app-cockpit></app-cockpit>
+  <app-cockpit
+    (serverCreated)="onServerAdded($event)"
+    (bluePrintCreated)="onBluePrintAdded($event)">
+  </app-cockpit>
       <hr>
   <div class="row">
     <div class="col-xs-12">
-      <app-server-element *ngFor="let element of serverElements"></app-server-element>
+
+      <app-server-element [elementSvr]="i" *ngFor="let i of serverArray"></app-server-element>
     </div>
   </div>
 </div>
+<!--
+
+ -->
