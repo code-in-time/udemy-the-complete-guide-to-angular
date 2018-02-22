@@ -10,9 +10,9 @@
 
 ### Generate componenet using the cli
 
-ng generate component custom
-ng g componenet feature/my-componenet
-ng g c serverElement --spec false
+- ng generate component custom
+- ng g componenet feature/my-componenet
+- ng g c serverElement --spec false
 
 #### make sure the componenet is here
 
